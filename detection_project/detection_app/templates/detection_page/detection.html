@@ -1,0 +1,45 @@
+<!-- detection_app/templates/detection_app/detection.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detection System</title>
+</head>
+<body>
+    <h1>Detection System</h1>
+    <!-- Add elements to display webcam feed and detection results here -->
+    <div>
+        <video id="video" autoplay></video>
+        <!-- You can add other HTML elements to display results here -->
+    </div>
+    <script>
+        // Your JavaScript code for accessing the webcam and displaying results
+        // should go here.
+        
+            async function onOpenCvReady() {
+                // Initialize OpenCV.js
+                await cv.onRuntimeInitialized();
+        
+                // Get video element
+                const videoElement = document.getElementById('video');
+        
+                // Try to access the user's webcam
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        
+                // Set the video element's source to the webcam stream
+                videoElement.srcObject = stream;
+        
+                // Function to start your detection code
+                function startDetection() {
+                    // Your detection code here, you can use OpenCV.js or other libraries
+                }
+        
+                // Wait for the video to load metadata (this can be adjusted)
+                videoElement.onloadedmetadata = function () {
+                    startDetection();
+                };
+            }
+        
+        
+    </script>
+</body>
+</html>

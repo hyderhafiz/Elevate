@@ -1,0 +1,17 @@
+opencv-python
+flask
+mediapipe
+imutils
+dlib
+keras = 2.15.0
+tensorflow = 2.15.0
+Flask-WTF
+pandas
+Flask-SQLALchemy
+Flask-Migrate
+Flask-Login
+openai==0.28
+email_validator
+scikit-learn==1.2.2
+deepgram-sdk==3.0.1
+pyaudio

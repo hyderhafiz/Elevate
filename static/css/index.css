@@ -1,0 +1,23 @@
+.content-container {
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    align-items: flex-start; /* Align children to the top */
+    margin-top: 20px; /* Space from the top */
+  }
+  
+  .video-feed-container {
+    flex: 1; /* Take up the remaining space */
+    max-width: 600px; /* Max width for the video feed */
+    margin-right: 20px; /* Spacing between video feed and transcript */
+  }
+  
+  .transcript-container {
+    width: 300px; /* Fixed width for the transcript */
+    background-color: white; /* Background color */
+    border: 1px solid #007bff; /* Border color to match the navbar */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    height: fit-content; /* Fit the height to the content */
+  }
+  
